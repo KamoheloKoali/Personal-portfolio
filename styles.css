@@ -299,9 +299,27 @@ img {
 .skills__js {
   width: 65%;
 }
-.skills__ux {
-  width: 85%;
+.skills__py {
+  width: 60%;
 }
+
+.skills__c {
+  width: 70%;
+}
+
+.skills__reactjs {
+  width: 50%;
+}
+
+.skills__linux {
+  width: 80%;
+}
+
+.skills__shell {
+  width: 90%;
+}
+
+
 .skills__img {
   border-radius: 0.5rem;
 }

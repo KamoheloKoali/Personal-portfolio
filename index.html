@@ -314,9 +314,9 @@
 
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" name="name" class="contact__input" required>
+                        <input id="color" type="text" placeholder="Name" name="name" class="contact__input" required>
                         <input type="mail" placeholder="Email" name="email" class="contact__input" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <textarea name="" id="animal" cols="0" rows="10" class="contact__input"></textarea>
                         <input type="submit" value="Send" name="send" class="contact__button button">
                     </form>
                 </div>
@@ -337,6 +337,27 @@
 
 
         <!--===== SCROLL REVEAL =====-->
+	    
+
+<script>
+    function submitForm() {
+        const color = document.getElementById('color').value;
+        const animal = document.getElementById('animal').value;
+
+        // Generate a random user ID
+        const userId = 'user_' + Math.random().toString(36).substr(2, 9);
+
+        // Compose email content
+        const subject = 'Hello';
+        const body = `Name: ${userId}\n${animal}`;
+
+        // Send email using mailto link
+        const mailtoLink = `mailto:kamohelokoali201@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+
+        // You may also send the form data to a server-side script using AJAX for processing
+    }
+</script>
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->

@@ -345,11 +345,11 @@
         const animal = document.getElementById('animal').value;
 
         // Generate a random user ID
-        const userId = 'user_' + Math.random().toString(36).substr(2, 9);
+        //const userId = 'user_' + Math.random().toString(36).substr(2, 9);
 
         // Compose email content
-        const subject = 'Hello';
-        const body = `Name: ${userId}\n${animal}`;
+        const subject = 'Contact';
+        const body = `Name: ${color}\n${animal}`;
 
         // Send email using mailto link
         const mailtoLink = `mailto:kamohelokoali201@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

@@ -291,7 +291,7 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 95%;
+  width: 80%;
 }
 .skills__css {
   width: 85%;
@@ -304,7 +304,7 @@ img {
 }
 
 .skills__c {
-  width: 70%;
+  width: 90%;
 }
 
 .skills__reactjs {
@@ -316,7 +316,7 @@ img {
 }
 
 .skills__shell {
-  width: 90%;
+  width: 65%;
 }
 
 
